@@ -25,24 +25,24 @@ export function Profile({ resources }: { resources: Resources }) {
   return (
     <>
       <link rel="stylesheet" href={resources.stylesheet} precedence="default" />
-      <article className="overflow-hidden rounded-xl border border-demo-line bg-demo-surface shadow-demo-card">
+      <article className="overflow-hidden rounded-xl border border-border bg-card shadow-xs">
         <div className="flex items-center gap-3 px-4 py-4">
-          <Avatar className="size-12 shrink-0 ring-2 ring-demo-surface ring-offset-1 ring-offset-demo-ink/10">
+          <Avatar className="size-12 shrink-0 ring-2 ring-card ring-offset-1 ring-offset-foreground/10">
             <AvatarImage src={resources.image} alt={profile.name} />
             <AvatarFallback>{profile.fallback}</AvatarFallback>
           </Avatar>
           <div className="min-w-0">
-            <h2 className="truncate font-hand text-profile font-semibold tracking-tight text-demo-ink">
+            <h2 className="truncate font-hand text-profile font-semibold tracking-tight text-foreground">
               {profile.name}
             </h2>
-            <p className="mt-1 truncate font-hand text-profile-bio text-demo-muted">
+            <p className="mt-1 truncate font-hand text-profile-bio text-muted-foreground">
               {profile.description}
             </p>
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-3 border-t border-demo-line bg-demo-wash px-4 py-3">
-          <AvatarGroup className="*:data-[slot=avatar]:ring-demo-surface">
+        <div className="flex items-center justify-between gap-3 border-t border-border bg-muted px-4 py-3">
+          <AvatarGroup className="*:data-[slot=avatar]:ring-card">
             {TEAM.map((member) => (
               <Avatar key={member.handle} size="sm">
                 <AvatarImage src={avatarUrl(member.avatar)} alt={member.name} />
@@ -50,7 +50,7 @@ export function Profile({ resources }: { resources: Resources }) {
               </Avatar>
             ))}
           </AvatarGroup>
-          <p className="text-xs text-demo-muted">
+          <p className="text-xs text-muted-foreground">
             {TEAM.length} people on this project
           </p>
         </div>
@@ -61,7 +61,7 @@ export function Profile({ resources }: { resources: Resources }) {
 
 export function ProfilePlaceholder() {
   return (
-    <article className="overflow-hidden rounded-xl border border-demo-line bg-demo-surface">
+    <article className="overflow-hidden rounded-xl border border-border bg-card">
       <div className="flex items-center gap-3 px-4 py-4">
         <Skeleton className="size-12 shrink-0 rounded-full" />
         <div className="min-w-0 flex-1 space-y-2">
@@ -69,7 +69,7 @@ export function ProfilePlaceholder() {
           <Skeleton className="h-4 w-44" />
         </div>
       </div>
-      <div className="flex items-center justify-between gap-3 border-t border-demo-line bg-demo-wash px-4 py-3">
+      <div className="flex items-center justify-between gap-3 border-t border-border bg-muted px-4 py-3">
         <div className="flex -space-x-2">
           <Skeleton className="size-6 rounded-full" />
           <Skeleton className="size-6 rounded-full" />

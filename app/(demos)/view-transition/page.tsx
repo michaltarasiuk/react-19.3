@@ -16,20 +16,20 @@ export default function ViewTransitionPage() {
   return (
     <>
       <header className="max-w-xl space-y-2">
-        <h1 className="text-2xl leading-display font-semibold tracking-tight text-demo-ink sm:text-3xl">
+        <h1 className="text-2xl leading-display font-semibold tracking-tight text-foreground sm:text-3xl">
           View Transition
         </h1>
-        <p className="max-w-lg text-sm leading-relaxed text-demo-muted">
+        <p className="max-w-lg text-sm leading-relaxed text-muted-foreground">
           Keep the skeleton visible until data, stylesheet, font, and image are
           ready, so the card appears complete.
         </p>
       </header>
 
       <div className="grid grid-cols-1 gap-x-10 gap-y-2 md:grid-cols-2 lg:gap-x-12">
-        <h2 className="text-base font-medium text-demo-ink md:col-start-1 md:row-start-1">
+        <h2 className="text-base font-medium text-foreground md:col-start-1 md:row-start-1">
           With React
         </h2>
-        <p className="min-h-10 text-sm text-demo-muted md:col-start-1 md:row-start-2">
+        <p className="min-h-10 text-sm text-muted-foreground md:col-start-1 md:row-start-2">
           Coordinated Suspense + ViewTransition reveal.
         </p>
         <div className="md:col-start-1 md:row-start-3">

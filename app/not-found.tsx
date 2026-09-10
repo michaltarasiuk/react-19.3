@@ -10,15 +10,15 @@ export default function NotFound() {
       <div className="grid w-full items-start gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:gap-8">
         <div className="flex max-w-xl flex-col gap-8">
           <header className="space-y-5">
-            <h1 className="text-2xl leading-display font-semibold tracking-tight text-demo-ink sm:text-3xl">
+            <h1 className="text-2xl leading-display font-semibold tracking-tight text-foreground sm:text-3xl">
               React 19.3
             </h1>
-            <Separator className="max-w-16 bg-demo-accent/50" />
+            <Separator className="max-w-16 bg-primary/50" />
             <div className="space-y-3">
-              <p className="text-lg font-medium tracking-tight text-demo-ink sm:text-xl">
+              <p className="text-lg font-medium tracking-tight text-foreground sm:text-xl">
                 Page not found
               </p>
-              <p className="max-w-md text-sm leading-relaxed text-demo-muted">
+              <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
                 No demo at this URL. Head home and pick one to try.
               </p>
             </div>
@@ -30,7 +30,7 @@ export default function NotFound() {
               variant: "outline",
               size: "sm",
               className:
-                "w-fit border-demo-line bg-demo-surface/80 text-demo-ink hover:bg-demo-wash hover:text-demo-ink",
+                "w-fit border-border bg-card/80 text-foreground hover:bg-muted hover:text-foreground",
             })}
           >
             <ArrowLeftIcon data-icon="inline-start" />
@@ -40,7 +40,7 @@ export default function NotFound() {
 
         <p
           aria-hidden
-          className="pointer-events-none select-none font-mono text-[clamp(5.5rem,18vw,9.5rem)] leading-none font-medium tracking-tighter text-demo-accent/30 lg:justify-self-end"
+          className="pointer-events-none select-none font-mono text-[clamp(5.5rem,18vw,9.5rem)] leading-none font-medium tracking-tighter text-primary/30 lg:justify-self-end"
         >
           404
         </p>

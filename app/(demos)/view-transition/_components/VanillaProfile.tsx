@@ -104,7 +104,7 @@ export function VanillaProfile() {
           border-radius: 999px;
           margin-left: -8px;
           object-fit: cover;
-          /* Match AvatarGroup ring-2 ring-demo-surface */
+          /* Match AvatarGroup ring-2 ring-card */
           box-shadow: 0 0 0 2px #fff;
         }
         .team-avatar:first-child {
@@ -136,10 +136,10 @@ export function VanillaProfile() {
 
   return (
     <>
-      <h2 className="text-base font-medium text-demo-ink md:col-start-2 md:row-start-1">
+      <h2 className="text-base font-medium text-foreground md:col-start-2 md:row-start-1">
         Without React
       </h2>
-      <p className="min-h-10 text-sm text-demo-muted md:col-start-2 md:row-start-2">
+      <p className="min-h-10 text-sm text-muted-foreground md:col-start-2 md:row-start-2">
         Same assets, no Suspense wait, so font and image settle whenever they
         arrive.
       </p>
