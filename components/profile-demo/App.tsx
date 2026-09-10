@@ -22,9 +22,6 @@ export default function App() {
 
       <div className="relative mx-auto flex w-full max-w-4xl flex-col gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:px-10">
         <header className="max-w-xl space-y-2">
-          <p className="font-mono text-eyebrow tracking-eyebrow text-demo-accent">
-            React 19.3
-          </p>
           <h1 className="text-3xl leading-display font-semibold tracking-tight text-demo-ink sm:text-4xl">
             Profile reveal
           </h1>
