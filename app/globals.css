@@ -86,11 +86,11 @@ body {
   --color-demo-accent: var(--demo-accent);
   --color-demo-paper: var(--demo-paper);
 
-  --text-eyebrow: 0.7rem;
+  --text-eyebrow: 0.65rem;
   --text-eyebrow--line-height: 1;
-  --text-profile: 1.65rem;
+  --text-profile: 1.35rem;
   --text-profile--line-height: 1;
-  --text-profile-bio: 1.05rem;
+  --text-profile-bio: 0.95rem;
   --text-profile-bio--line-height: 1.25;
 
   --tracking-eyebrow: 0.18em;

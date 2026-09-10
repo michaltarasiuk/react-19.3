@@ -45,19 +45,19 @@ export function VanillaProfileCard() {
         .card {
           overflow: hidden;
           border: 1px solid #d7dde8;
-          border-radius: 16px;
+          border-radius: 12px;
           background: #fff;
           box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
         }
         .header {
           display: flex;
           align-items: center;
-          gap: 16px;
-          padding: 20px;
+          gap: 12px;
+          padding: 16px;
         }
         .header img {
-          width: 64px;
-          height: 64px;
+          width: 48px;
+          height: 48px;
           border-radius: 999px;
           background: #e2e8f0;
           object-fit: cover;
@@ -66,14 +66,14 @@ export function VanillaProfileCard() {
         .name {
           margin: 0;
           font-family: "Caveat", cursive;
-          font-size: 26px;
+          font-size: 22px;
           line-height: 1;
           font-weight: 600;
         }
         .bio {
-          margin: 6px 0 0;
+          margin: 4px 0 0;
           font-family: "Caveat", cursive;
-          font-size: 17px;
+          font-size: 15px;
           line-height: 1.25;
           color: #5b6b7c;
         }
@@ -82,7 +82,7 @@ export function VanillaProfileCard() {
           align-items: center;
           justify-content: space-between;
           gap: 12px;
-          padding: 12px 20px;
+          padding: 10px 16px;
           border-top: 1px solid #d7dde8;
           background: #f3f6fa;
         }
@@ -109,7 +109,7 @@ export function VanillaProfileCard() {
       </style>
       <div class="card">
         <div class="header">
-          <img src="${image}" alt="${profile.name}" width="64" height="64" />
+          <img src="${image}" alt="${profile.name}" width="48" height="48" />
           <div>
             <p class="name">${profile.name}</p>
             <p class="bio">${profile.description}</p>
@@ -127,15 +127,15 @@ export function VanillaProfileCard() {
 
   return (
     <>
-      <h2 className="text-lg font-medium text-demo-ink md:col-start-2 md:row-start-1">
+      <h2 className="text-base font-medium text-demo-ink md:col-start-2 md:row-start-1">
         Without React
       </h2>
-      <p className="min-h-12 text-sm text-demo-muted md:col-start-2 md:row-start-2">
+      <p className="min-h-10 text-sm text-demo-muted md:col-start-2 md:row-start-2">
         Same assets, no Suspense wait, so font and image settle whenever they
         arrive.
       </p>
       <div className="md:col-start-2 md:row-start-3">
-        <Button type="button" variant="outline" onClick={show}>
+        <Button type="button" size="sm" variant="outline" onClick={show}>
           Show profile
         </Button>
       </div>
@@ -143,7 +143,7 @@ export function VanillaProfileCard() {
         ref={ref}
         title="Vanilla profile card"
         scrolling="no"
-        className="block h-40 w-full overflow-hidden border-0 md:col-start-2 md:row-start-4"
+        className="block h-32 w-full overflow-hidden border-0 md:col-start-2 md:row-start-4"
       />
     </>
   );

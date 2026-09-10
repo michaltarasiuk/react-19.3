@@ -20,30 +20,31 @@ export default function App() {
         aria-hidden
       />
 
-      <div className="relative mx-auto flex w-full max-w-5xl flex-col gap-12 px-6 py-12 sm:px-10 sm:py-16 lg:px-12">
-        <header className="max-w-2xl space-y-3">
+      <div className="relative mx-auto flex w-full max-w-4xl flex-col gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:px-10">
+        <header className="max-w-xl space-y-2">
           <p className="font-mono text-eyebrow tracking-eyebrow text-demo-accent">
             React 19.3
           </p>
-          <h1 className="text-4xl leading-display font-semibold tracking-tight text-demo-ink sm:text-5xl">
+          <h1 className="text-3xl leading-display font-semibold tracking-tight text-demo-ink sm:text-4xl">
             Profile reveal
           </h1>
-          <p className="max-w-xl text-base leading-relaxed text-demo-muted">
+          <p className="max-w-lg text-sm leading-relaxed text-demo-muted">
             React holds the skeleton until profile data, stylesheet, font, and
             avatar are ready, then ViewTransition crossfades them in.
           </p>
         </header>
 
-        <div className="grid grid-cols-1 gap-x-12 gap-y-3 md:grid-cols-2 lg:gap-x-16">
-          <h2 className="text-lg font-medium text-demo-ink md:col-start-1 md:row-start-1">
+        <div className="grid grid-cols-1 gap-x-10 gap-y-2 md:grid-cols-2 lg:gap-x-12">
+          <h2 className="text-base font-medium text-demo-ink md:col-start-1 md:row-start-1">
             With React
           </h2>
-          <p className="min-h-12 text-sm text-demo-muted md:col-start-1 md:row-start-2">
+          <p className="min-h-10 text-sm text-demo-muted md:col-start-1 md:row-start-2">
             Coordinated Suspense + ViewTransition reveal.
           </p>
           <div className="md:col-start-1 md:row-start-3">
             <Button
               type="button"
+              size="sm"
               variant="outline"
               onClick={() => {
                 startTransition(() => {
@@ -58,7 +59,7 @@ export default function App() {
               Show profile
             </Button>
           </div>
-          <div className="min-h-40 md:col-start-1 md:row-start-4">
+          <div className="min-h-32 md:col-start-1 md:row-start-4">
             {resources && (
               <ViewTransition update="auto" default="none">
                 <Suspense fallback={<ProfileCardLoading />}>
