@@ -4,8 +4,8 @@ import { useRef } from "react";
 
 import { Button } from "@/components/ui/button";
 
-import { TEAM, fetchProfile } from "./data";
-import { avatarUrl, freshImageUrl, freshStylesheetUrl } from "./resources";
+import { TEAM, fetchProfile } from "../_lib/data";
+import { avatarUrl, freshImageUrl, freshStylesheetUrl } from "../_lib/resources";
 
 /**
  * Non-React comparison: loads the same resources without Suspense / ViewTransition

@@ -10,8 +10,8 @@ import {
 } from "@/components/ui/avatar";
 import { Skeleton } from "@/components/ui/skeleton";
 
-import { TEAM, type Profile } from "./data";
-import { avatarUrl } from "./resources";
+import { TEAM, type Profile } from "../_lib/data";
+import { avatarUrl } from "../_lib/resources";
 
 export interface ProfileResources {
   profilePromise: Promise<Profile>;
