@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { ChevronRightIcon, LayersIcon } from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
 
 import {
   Item,
   ItemContent,
   ItemDescription,
   ItemGroup,
-  ItemMedia,
   ItemTitle,
 } from "@/components/ui/item";
 
@@ -29,9 +28,6 @@ export default function Home() {
           className="border-demo-line bg-demo-surface/80 hover:bg-demo-wash"
           render={<Link href="/profile-demo" />}
         >
-          <ItemMedia variant="icon" className="text-demo-accent">
-            <LayersIcon />
-          </ItemMedia>
           <ItemContent>
             <ItemTitle className="text-demo-ink">Profile reveal</ItemTitle>
             <ItemDescription className="text-demo-muted">
