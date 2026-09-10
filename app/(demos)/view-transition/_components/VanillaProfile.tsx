@@ -151,7 +151,6 @@ export function VanillaProfile() {
       <iframe
         ref={ref}
         title="Vanilla profile"
-        scrolling="no"
         className="block h-36 w-full overflow-hidden border-0 md:col-start-2 md:row-start-4"
       />
     </>
