@@ -41,7 +41,7 @@ export function ProfileCard({ resources }: { resources: ProfileResources }) {
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-3 border-t border-demo-line bg-demo-wash px-4 py-2.5">
+        <div className="flex items-center justify-between gap-3 border-t border-demo-line bg-demo-wash px-4 py-3">
           <AvatarGroup className="*:data-[slot=avatar]:ring-demo-surface">
             {TEAM.map((member) => (
               <Avatar key={member.handle} size="sm">
@@ -69,7 +69,7 @@ export function ProfileCardLoading() {
           <Skeleton className="h-4 w-44" />
         </div>
       </div>
-      <div className="flex items-center justify-between gap-3 border-t border-demo-line bg-demo-wash px-4 py-2.5">
+      <div className="flex items-center justify-between gap-3 border-t border-demo-line bg-demo-wash px-4 py-3">
         <div className="flex -space-x-2">
           <Skeleton className="size-6 rounded-full" />
           <Skeleton className="size-6 rounded-full" />

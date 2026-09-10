@@ -2,7 +2,6 @@
 
 import { Suspense, ViewTransition, startTransition, useState } from "react";
 
-import { DemoBackLink } from "@/components/demo-back-link";
 import { Button } from "@/components/ui/button";
 
 import { ProfileCard, ProfileCardLoading } from "./_components/ProfileCard";
@@ -15,9 +14,7 @@ export default function ProfileDemoPage() {
   const [resources, setResources] = useState<ProfileResources | null>(null);
 
   return (
-    <div className="relative mx-auto flex w-full max-w-4xl flex-col gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:px-10">
-      <DemoBackLink />
-
+    <>
       <header className="max-w-xl space-y-2">
         <h1 className="text-2xl leading-display font-semibold tracking-tight text-demo-ink sm:text-3xl">
           Profile reveal
@@ -65,6 +62,6 @@ export default function ProfileDemoPage() {
 
         <VanillaProfileCard />
       </div>
-    </div>
+    </>
   );
 }
