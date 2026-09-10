@@ -38,7 +38,7 @@ export default function App() {
           <h2 className="font-(family-name:--font-demo-display) text-lg font-medium text-(--demo-ink) md:col-start-1 md:row-start-1">
             With React
           </h2>
-          <p className="min-h-10 text-sm text-(--demo-muted) md:col-start-1 md:row-start-2">
+          <p className="min-h-12 text-sm text-(--demo-muted) md:col-start-1 md:row-start-2">
             Coordinated Suspense + ViewTransition reveal.
           </p>
           <div className="md:col-start-1 md:row-start-3">
@@ -58,7 +58,7 @@ export default function App() {
               Show profile
             </Button>
           </div>
-          <div className="min-h-37 md:col-start-1 md:row-start-4">
+          <div className="min-h-40 md:col-start-1 md:row-start-4">
             {resources && (
               <ViewTransition update="auto" default="none">
                 <Suspense fallback={<ProfileCardLoading />}>

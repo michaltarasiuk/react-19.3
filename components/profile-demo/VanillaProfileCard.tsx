@@ -37,6 +37,7 @@ export function VanillaProfileCard() {
       <style>
         body {
           margin: 0;
+          overflow: hidden;
           font-family: "Sora", system-ui, sans-serif;
           color: #122033;
           background: transparent;
@@ -129,7 +130,7 @@ export function VanillaProfileCard() {
       <h2 className="font-(family-name:--font-demo-display) text-lg font-medium text-(--demo-ink) md:col-start-2 md:row-start-1">
         Without React
       </h2>
-      <p className="min-h-10 text-sm text-(--demo-muted) md:col-start-2 md:row-start-2">
+      <p className="min-h-12 text-sm text-(--demo-muted) md:col-start-2 md:row-start-2">
         Same assets, no Suspense wait, so font and image settle whenever they
         arrive.
       </p>
@@ -141,7 +142,8 @@ export function VanillaProfileCard() {
       <iframe
         ref={ref}
         title="Vanilla profile card"
-        className="block h-37 w-full border-0 md:col-start-2 md:row-start-4"
+        scrolling="no"
+        className="block h-40 w-full overflow-hidden border-0 md:col-start-2 md:row-start-4"
       />
     </>
   );
