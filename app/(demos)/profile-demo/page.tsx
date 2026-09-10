@@ -50,7 +50,7 @@ export default function ProfileDemoPage() {
             Show profile
           </Button>
         </div>
-        <div className="min-h-32 md:col-start-1 md:row-start-4">
+        <div className="min-h-36 md:col-start-1 md:row-start-4">
           {resources && (
             <ViewTransition update="auto" default="none">
               <Suspense fallback={<ProfileCardLoading />}>

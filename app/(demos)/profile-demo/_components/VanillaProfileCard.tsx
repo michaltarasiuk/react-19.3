@@ -39,6 +39,11 @@ export function VanillaProfileCard() {
     doc.open();
     doc.write(`
       <style>
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
         body {
           margin: 0;
           overflow: hidden;
@@ -86,7 +91,7 @@ export function VanillaProfileCard() {
           align-items: center;
           justify-content: space-between;
           gap: 12px;
-          padding: 10px 16px;
+          padding: 12px 16px;
           border-top: 1px solid #d7dde8;
           background: #f3f6fa;
         }
@@ -97,10 +102,10 @@ export function VanillaProfileCard() {
           width: 24px;
           height: 24px;
           border-radius: 999px;
-          border: 2px solid #fff;
           margin-left: -8px;
-          background: #e2e8f0;
           object-fit: cover;
+          /* Match AvatarGroup ring-2 ring-demo-surface */
+          box-shadow: 0 0 0 2px #fff;
         }
         .team-avatar:first-child {
           margin-left: 0;
@@ -147,7 +152,7 @@ export function VanillaProfileCard() {
         ref={ref}
         title="Vanilla profile card"
         scrolling="no"
-        className="block h-32 w-full overflow-hidden border-0 md:col-start-2 md:row-start-4"
+        className="block h-36 w-full overflow-hidden border-0 md:col-start-2 md:row-start-4"
       />
     </>
   );
