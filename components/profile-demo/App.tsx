@@ -22,23 +22,23 @@ export default function App() {
 
       <div className="relative mx-auto flex w-full max-w-5xl flex-col gap-12 px-6 py-12 sm:px-10 sm:py-16 lg:px-12">
         <header className="max-w-2xl space-y-3">
-          <p className="font-(family-name:--font-demo-mono) text-[0.7rem] tracking-[0.18em] text-(--demo-accent)">
+          <p className="font-mono text-eyebrow tracking-eyebrow text-demo-accent">
             React 19.3
           </p>
-          <h1 className="font-(family-name:--font-demo-display) text-4xl leading-[1.05] font-semibold tracking-tight text-(--demo-ink) sm:text-5xl">
+          <h1 className="text-4xl leading-display font-semibold tracking-tight text-demo-ink sm:text-5xl">
             Profile reveal
           </h1>
-          <p className="max-w-xl text-base leading-relaxed text-(--demo-muted)">
+          <p className="max-w-xl text-base leading-relaxed text-demo-muted">
             React holds the skeleton until profile data, stylesheet, font, and
             avatar are ready, then ViewTransition crossfades them in.
           </p>
         </header>
 
         <div className="grid grid-cols-1 gap-x-12 gap-y-3 md:grid-cols-2 lg:gap-x-16">
-          <h2 className="font-(family-name:--font-demo-display) text-lg font-medium text-(--demo-ink) md:col-start-1 md:row-start-1">
+          <h2 className="text-lg font-medium text-demo-ink md:col-start-1 md:row-start-1">
             With React
           </h2>
-          <p className="min-h-12 text-sm text-(--demo-muted) md:col-start-1 md:row-start-2">
+          <p className="min-h-12 text-sm text-demo-muted md:col-start-1 md:row-start-2">
             Coordinated Suspense + ViewTransition reveal.
           </p>
           <div className="md:col-start-1 md:row-start-3">

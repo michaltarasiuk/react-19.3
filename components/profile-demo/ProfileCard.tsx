@@ -25,24 +25,24 @@ export function ProfileCard({ resources }: { resources: ProfileResources }) {
   return (
     <>
       <link rel="stylesheet" href={resources.stylesheet} precedence="default" />
-      <article className="profile-reveal overflow-hidden rounded-2xl border border-(--demo-line) bg-(--demo-surface) shadow-[0_1px_0_rgba(15,23,42,0.04)]">
+      <article className="overflow-hidden rounded-2xl border border-demo-line bg-demo-surface shadow-demo-card">
         <div className="flex items-center gap-4 px-5 py-5">
-          <Avatar className="size-16 shrink-0 ring-2 ring-(--demo-surface) ring-offset-2 ring-offset-(--demo-ink)/10">
+          <Avatar className="size-16 shrink-0 ring-2 ring-demo-surface ring-offset-2 ring-offset-demo-ink/10">
             <AvatarImage src={resources.image} alt={profile.name} />
             <AvatarFallback>{profile.fallback}</AvatarFallback>
           </Avatar>
           <div className="min-w-0">
-            <h2 className="profile-name truncate text-[1.65rem] leading-none font-semibold tracking-tight text-(--demo-ink)">
+            <h2 className="truncate font-hand text-profile font-semibold tracking-tight text-demo-ink">
               {profile.name}
             </h2>
-            <p className="profile-bio mt-1.5 truncate text-[1.05rem] leading-snug text-(--demo-muted)">
+            <p className="mt-1.5 truncate font-hand text-profile-bio text-demo-muted">
               {profile.description}
             </p>
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-3 border-t border-(--demo-line) bg-(--demo-wash) px-5 py-3">
-          <AvatarGroup className="*:data-[slot=avatar]:ring-(--demo-surface)">
+        <div className="flex items-center justify-between gap-3 border-t border-demo-line bg-demo-wash px-5 py-3">
+          <AvatarGroup className="*:data-[slot=avatar]:ring-demo-surface">
             {TEAM.map((member) => (
               <Avatar key={member.handle} size="sm">
                 <AvatarImage src={avatarUrl(member.avatar)} alt={member.name} />
@@ -50,7 +50,7 @@ export function ProfileCard({ resources }: { resources: ProfileResources }) {
               </Avatar>
             ))}
           </AvatarGroup>
-          <p className="text-xs text-(--demo-muted)">
+          <p className="text-xs text-demo-muted">
             {TEAM.length} people on this project
           </p>
         </div>
@@ -61,7 +61,7 @@ export function ProfileCard({ resources }: { resources: ProfileResources }) {
 
 export function ProfileCardLoading() {
   return (
-    <article className="overflow-hidden rounded-2xl border border-(--demo-line) bg-(--demo-surface)">
+    <article className="overflow-hidden rounded-2xl border border-demo-line bg-demo-surface">
       <div className="flex items-center gap-4 px-5 py-5">
         <Skeleton className="size-16 shrink-0 rounded-full" />
         <div className="min-w-0 flex-1 space-y-2">
@@ -69,7 +69,7 @@ export function ProfileCardLoading() {
           <Skeleton className="h-5 w-52" />
         </div>
       </div>
-      <div className="flex items-center justify-between gap-3 border-t border-(--demo-line) bg-(--demo-wash) px-5 py-3">
+      <div className="flex items-center justify-between gap-3 border-t border-demo-line bg-demo-wash px-5 py-3">
         <div className="flex -space-x-2">
           <Skeleton className="size-6 rounded-full" />
           <Skeleton className="size-6 rounded-full" />

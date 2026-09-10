@@ -127,10 +127,10 @@ export function VanillaProfileCard() {
 
   return (
     <>
-      <h2 className="font-(family-name:--font-demo-display) text-lg font-medium text-(--demo-ink) md:col-start-2 md:row-start-1">
+      <h2 className="text-lg font-medium text-demo-ink md:col-start-2 md:row-start-1">
         Without React
       </h2>
-      <p className="min-h-12 text-sm text-(--demo-muted) md:col-start-2 md:row-start-2">
+      <p className="min-h-12 text-sm text-demo-muted md:col-start-2 md:row-start-2">
         Same assets, no Suspense wait, so font and image settle whenever they
         arrive.
       </p>
