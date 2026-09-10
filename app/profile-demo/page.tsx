@@ -16,9 +16,9 @@ export default function ProfileDemoPage() {
   return (
     <div className="relative mx-auto flex w-full max-w-4xl flex-col gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:px-10">
       <header className="max-w-xl space-y-2">
-          <h1 className="text-2xl leading-display font-semibold tracking-tight text-demo-ink sm:text-3xl">
-            Profile reveal
-          </h1>
+        <h1 className="text-2xl leading-display font-semibold tracking-tight text-demo-ink sm:text-3xl">
+          Profile reveal
+        </h1>
         <p className="max-w-lg text-sm leading-relaxed text-demo-muted">
           React holds the skeleton until profile data, stylesheet, font, and
           avatar are ready, then ViewTransition crossfades them in.
