@@ -13,11 +13,11 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { TEAM, type Profile } from "./data";
 import { avatarUrl } from "./resources";
 
-export type ProfileResources = {
+export interface ProfileResources {
   profilePromise: Promise<Profile>;
   stylesheet: string;
   image: string;
-};
+}
 
 export function ProfileCard({ resources }: { resources: ProfileResources }) {
   const profile = use(resources.profilePromise);

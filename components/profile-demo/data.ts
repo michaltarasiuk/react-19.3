@@ -2,13 +2,13 @@
  * Profile data for the ViewTransition reveal demo.
  * Note: real apps usually use the framework's Suspense-aware data layer.
  */
-export type Profile = {
+export interface Profile {
   name: string;
   handle: string;
   description: string;
   fallback: string;
   avatar: string;
-};
+}
 
 export async function fetchProfile() {
   await new Promise((resolve) => {
