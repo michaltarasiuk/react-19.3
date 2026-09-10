@@ -10,9 +10,7 @@ const STORAGE_KEY = "react-19.3:browser-draft";
 
 export function SavedDraft() {
   use(browser("The draft is stored in localStorage."));
-  const [draft, setDraft] = useState(
-    () => localStorage.getItem(STORAGE_KEY) ?? "",
-  );
+  const [draft, setDraft] = useState(() => localStorage.getItem(STORAGE_KEY) ?? "");
 
   function handleChange(event: ChangeEvent<HTMLTextAreaElement>) {
     const nextDraft = event.target.value;

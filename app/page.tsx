@@ -2,20 +2,14 @@ import Link from "next/link";
 import { ChevronRightIcon } from "lucide-react";
 
 import { PageHeader } from "@/components/page-header";
-import {
-  Item,
-  ItemContent,
-  ItemDescription,
-  ItemGroup,
-  ItemTitle,
-} from "@/components/ui/item";
+import { Item, ItemContent, ItemDescription, ItemGroup, ItemTitle } from "@/components/ui/item";
 
 export default function Home() {
   return (
     <div className="relative mx-auto flex w-full max-w-4xl flex-col gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:px-10">
       <PageHeader title="React 19.3">
-        Interactive demos for Suspense, ViewTransition, Fragment Refs, browser,
-        and the other React 19.3 APIs.
+        Demos for View Transitions, <code className="text-foreground">browser()</code>, and other
+        features from the React 19.3 release.
       </PageHeader>
 
       <ItemGroup className="max-w-xl">
@@ -25,10 +19,11 @@ export default function Home() {
           render={<Link href="/view-transition" />}
         >
           <ItemContent>
-            <ItemTitle className="text-foreground">View Transition</ItemTitle>
+            <ItemTitle className="text-foreground">View Transitions</ItemTitle>
             <ItemDescription className="text-muted-foreground">
-              Keep the skeleton visible until data, stylesheet, font, and image
-              are ready, so the card appears complete.
+              Animate elements as they enter, exit, move, or resize with{" "}
+              <code className="text-foreground">{"<ViewTransition>"}</code> and the browser View
+              Transition API.
             </ItemDescription>
           </ItemContent>
           <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />
@@ -39,10 +34,12 @@ export default function Home() {
           render={<Link href="/browser" />}
         >
           <ItemContent>
-            <ItemTitle className="text-foreground">browser</ItemTitle>
+            <ItemTitle className="text-foreground">
+              <code>browser</code>
+            </ItemTitle>
             <ItemDescription className="text-muted-foreground">
-              Mark a component as browser-only during server rendering with{" "}
-              <code className="text-foreground">use(browser())</code>.
+              Call <code className="text-foreground">use(browser())</code> to opt a component out of
+              server rendering when it depends on browser-only APIs.
             </ItemDescription>
           </ItemContent>
           <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground" />

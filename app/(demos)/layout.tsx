@@ -11,8 +11,7 @@ export default function DemosLayout({ children }: LayoutProps<"/">) {
         className={buttonVariants({
           variant: "ghost",
           size: "sm",
-          className:
-            "-ms-3 w-fit text-muted-foreground hover:bg-muted hover:text-foreground",
+          className: "-ms-3 w-fit text-muted-foreground hover:bg-muted hover:text-foreground",
         })}
       >
         <ArrowLeftIcon data-icon="inline-start" />

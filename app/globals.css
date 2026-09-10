@@ -33,8 +33,7 @@
 .demo-shell {
   background:
     radial-gradient(1200px 600px at 10% -10%, #d9ebe8 0%, transparent 55%),
-    radial-gradient(900px 500px at 100% 0%, #dfe7f2 0%, transparent 50%),
-    var(--background);
+    radial-gradient(900px 500px at 100% 0%, #dfe7f2 0%, transparent 50%), var(--background);
 }
 
 .demo-grid {

@@ -3,10 +3,7 @@
  * Avatars are solid-color SVGs served from /public/avatars.
  */
 export function freshStylesheetUrl() {
-  return (
-    "https://fonts.googleapis.com/css2?family=Caveat&display=swap&t=" +
-    Date.now()
-  );
+  return "https://fonts.googleapis.com/css2?family=Caveat&display=swap&t=" + Date.now();
 }
 
 export function freshImageUrl(avatar = "teal") {

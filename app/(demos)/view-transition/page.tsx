@@ -16,9 +16,10 @@ export default function ViewTransitionPage() {
 
   return (
     <>
-      <PageHeader title="View Transition">
-        Keep the skeleton visible until data, stylesheet, font, and image are
-        ready, so the card appears complete.
+      <PageHeader title="View Transitions">
+        Animate elements as they enter, exit, move, or resize with{" "}
+        <code className="text-foreground">{"<ViewTransition>"}</code> and the browser View
+        Transition API.
       </PageHeader>
 
       <div className="grid grid-cols-1 gap-x-10 gap-y-2 md:grid-cols-2 lg:gap-x-12">

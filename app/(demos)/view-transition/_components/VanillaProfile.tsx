@@ -5,11 +5,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 
 import { TEAM, fetchProfile } from "../_lib/data";
-import {
-  avatarUrl,
-  freshImageUrl,
-  freshStylesheetUrl,
-} from "../_lib/resources";
+import { avatarUrl, freshImageUrl, freshStylesheetUrl } from "../_lib/resources";
 
 /**
  * Non-React comparison: loads the same resources without Suspense / ViewTransition
@@ -140,8 +136,7 @@ export function VanillaProfile() {
         Without React
       </h2>
       <p className="min-h-10 text-sm text-muted-foreground md:col-start-2 md:row-start-2">
-        Same assets, no Suspense wait, so font and image settle whenever they
-        arrive.
+        Same assets, no Suspense wait, so font and image settle whenever they arrive.
       </p>
       <div className="md:col-start-2 md:row-start-3">
         <Button type="button" size="sm" variant="outline" onClick={show}>

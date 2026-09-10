@@ -2,12 +2,7 @@
 
 import { use } from "react";
 
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarGroup,
-  AvatarImage,
-} from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarGroup, AvatarImage } from "@/components/ui/avatar";
 import { Skeleton } from "@/components/ui/skeleton";
 
 import { TEAM, type Profile as ProfileData } from "../_lib/data";
@@ -50,9 +45,7 @@ export function Profile({ resources }: { resources: Resources }) {
               </Avatar>
             ))}
           </AvatarGroup>
-          <p className="text-xs text-muted-foreground">
-            {TEAM.length} people on this project
-          </p>
+          <p className="text-xs text-muted-foreground">{TEAM.length} people on this project</p>
         </div>
       </article>
     </>
