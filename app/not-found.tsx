@@ -19,8 +19,7 @@ export default function NotFound() {
                 Page not found
               </p>
               <p className="max-w-md text-sm leading-relaxed text-demo-muted">
-                That path isn&apos;t part of this release tour. Head home and
-                pick a demo to try.
+                No demo at this URL. Head home and pick one to try.
               </p>
             </div>
           </header>

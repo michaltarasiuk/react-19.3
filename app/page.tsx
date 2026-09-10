@@ -17,8 +17,8 @@ export default function Home() {
           React 19.3
         </h1>
         <p className="max-w-lg text-sm leading-relaxed text-demo-muted">
-          Small interactive demos for Suspense, ViewTransition, and the other
-          release APIs. Open one and try it.
+          Interactive demos for Suspense, ViewTransition, Fragment Refs,
+          browser, and the other React 19.3 APIs.
         </p>
       </header>
 
@@ -26,13 +26,13 @@ export default function Home() {
         <Item
           variant="outline"
           className="border-demo-line bg-demo-surface/80 hover:bg-demo-wash"
-          render={<Link href="/profile-demo" />}
+          render={<Link href="/view-transition" />}
         >
           <ItemContent>
-            <ItemTitle className="text-demo-ink">Profile reveal</ItemTitle>
+            <ItemTitle className="text-demo-ink">View Transition</ItemTitle>
             <ItemDescription className="text-demo-muted">
-              Hold a skeleton until data, stylesheet, font, and avatar are
-              ready, then crossfade with ViewTransition.
+              Keep the skeleton visible until data, stylesheet, font, and image
+              are ready, so the card appears complete.
             </ItemDescription>
           </ItemContent>
           <ChevronRightIcon className="size-4 shrink-0 text-demo-muted" />

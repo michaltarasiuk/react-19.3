@@ -10,16 +10,16 @@ import {
 } from "@/components/ui/avatar";
 import { Skeleton } from "@/components/ui/skeleton";
 
-import { TEAM, type Profile } from "../_lib/data";
+import { TEAM, type Profile as ProfileData } from "../_lib/data";
 import { avatarUrl } from "../_lib/resources";
 
-export interface ProfileResources {
-  profilePromise: Promise<Profile>;
+export interface Resources {
+  profilePromise: Promise<ProfileData>;
   stylesheet: string;
   image: string;
 }
 
-export function ProfileCard({ resources }: { resources: ProfileResources }) {
+export function Profile({ resources }: { resources: Resources }) {
   const profile = use(resources.profilePromise);
 
   return (
@@ -59,7 +59,7 @@ export function ProfileCard({ resources }: { resources: ProfileResources }) {
   );
 }
 
-export function ProfileCardLoading() {
+export function ProfilePlaceholder() {
   return (
     <article className="overflow-hidden rounded-xl border border-demo-line bg-demo-surface">
       <div className="flex items-center gap-3 px-4 py-4">

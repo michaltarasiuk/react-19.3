@@ -4,24 +4,24 @@ import { Suspense, ViewTransition, startTransition, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 
-import { ProfileCard, ProfileCardLoading } from "./_components/ProfileCard";
-import type { ProfileResources } from "./_components/ProfileCard";
-import { VanillaProfileCard } from "./_components/VanillaProfileCard";
+import { Profile, ProfilePlaceholder } from "./_components/Profile";
+import type { Resources } from "./_components/Profile";
+import { VanillaProfile } from "./_components/VanillaProfile";
 import { fetchProfile } from "./_lib/data";
 import { freshImageUrl, freshStylesheetUrl } from "./_lib/resources";
 
-export default function ProfileDemoPage() {
-  const [resources, setResources] = useState<ProfileResources | null>(null);
+export default function ViewTransitionPage() {
+  const [resources, setResources] = useState<Resources | null>(null);
 
   return (
     <>
       <header className="max-w-xl space-y-2">
         <h1 className="text-2xl leading-display font-semibold tracking-tight text-demo-ink sm:text-3xl">
-          Profile reveal
+          View Transition
         </h1>
         <p className="max-w-lg text-sm leading-relaxed text-demo-muted">
-          React holds the skeleton until profile data, stylesheet, font, and
-          avatar are ready, then ViewTransition crossfades them in.
+          Keep the skeleton visible until data, stylesheet, font, and image are
+          ready, so the card appears complete.
         </p>
       </header>
 
@@ -53,14 +53,14 @@ export default function ProfileDemoPage() {
         <div className="min-h-36 md:col-start-1 md:row-start-4">
           {resources && (
             <ViewTransition update="auto" default="none">
-              <Suspense fallback={<ProfileCardLoading />}>
-                <ProfileCard resources={resources} />
+              <Suspense fallback={<ProfilePlaceholder />}>
+                <Profile resources={resources} />
               </Suspense>
             </ViewTransition>
           )}
         </div>
 
-        <VanillaProfileCard />
+        <VanillaProfile />
       </div>
     </>
   );

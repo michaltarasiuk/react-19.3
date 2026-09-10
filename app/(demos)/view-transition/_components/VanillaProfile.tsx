@@ -15,7 +15,7 @@ import {
  * Non-React comparison: loads the same resources without Suspense / ViewTransition
  * coordination, so text and image pop in on their own schedules.
  */
-export function VanillaProfileCard() {
+export function VanillaProfile() {
   const ref = useRef<HTMLIFrameElement>(null);
 
   async function show() {
@@ -150,7 +150,7 @@ export function VanillaProfileCard() {
       </div>
       <iframe
         ref={ref}
-        title="Vanilla profile card"
+        title="Vanilla profile"
         scrolling="no"
         className="block h-36 w-full overflow-hidden border-0 md:col-start-2 md:row-start-4"
       />
