@@ -2,6 +2,7 @@
 
 import { Suspense, ViewTransition, startTransition, useState } from "react";
 
+import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 
 import { Profile, ProfilePlaceholder } from "./_components/Profile";
@@ -15,15 +16,10 @@ export default function ViewTransitionPage() {
 
   return (
     <>
-      <header className="max-w-xl space-y-2">
-        <h1 className="text-2xl leading-display font-semibold tracking-tight text-foreground sm:text-3xl">
-          View Transition
-        </h1>
-        <p className="max-w-lg text-sm leading-relaxed text-muted-foreground">
-          Keep the skeleton visible until data, stylesheet, font, and image are
-          ready, so the card appears complete.
-        </p>
-      </header>
+      <PageHeader title="View Transition">
+        Keep the skeleton visible until data, stylesheet, font, and image are
+        ready, so the card appears complete.
+      </PageHeader>
 
       <div className="grid grid-cols-1 gap-x-10 gap-y-2 md:grid-cols-2 lg:gap-x-12">
         <h2 className="text-base font-medium text-foreground md:col-start-1 md:row-start-1">
