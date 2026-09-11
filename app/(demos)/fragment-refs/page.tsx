@@ -1,6 +1,7 @@
 import { PageHeader } from "@/components/page-header";
 
-import { PaymentMethodForm } from "./_components/PaymentMethodForm";
+import { PaymentMethodForm } from "./_components/payment-method-form";
+import { FocusFirst } from "@/app/(demos)/fragment-refs/_lib/focus-first";
 
 export default function FragmentRefsPage() {
   return (
@@ -11,7 +12,9 @@ export default function FragmentRefsPage() {
         without a wrapper element.
       </PageHeader>
 
-      <PaymentMethodForm />
+      <FocusFirst>
+        <PaymentMethodForm />
+      </FocusFirst>
     </>
   );
 }

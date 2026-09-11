@@ -5,9 +5,9 @@ import { Suspense, ViewTransition, startTransition, useState } from "react";
 import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 
-import { Profile, ProfilePlaceholder } from "./_components/Profile";
-import type { Resources } from "./_components/Profile";
-import { VanillaProfile } from "./_components/VanillaProfile";
+import { Profile, ProfilePlaceholder } from "./_components/profile";
+import type { Resources } from "./_components/profile";
+import { VanillaProfile } from "./_components/vanilla-profile";
 import { fetchProfile } from "./_lib/data";
 import { freshImageUrl, freshStylesheetUrl } from "./_lib/resources";
 
